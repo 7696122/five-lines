@@ -184,49 +184,308 @@ class Player implements Tile2 {
 }
 class Stone implements Tile2 {
   isAir(): boolean {
-    throw new Error("Method not implemented.");
+    return false;
   }
   isFlux(): boolean {
-    throw new Error("Method not implemented.");
+    return false;
   }
   isUnbreakable(): boolean {
-    throw new Error("Method not implemented.");
+    return false;
   }
   isPlayer(): boolean {
-    throw new Error("Method not implemented.");
+    return false;
   }
   isStone(): boolean {
-    throw new Error("Method not implemented.");
+    return true;
   }
   isFallingStone(): boolean {
-    throw new Error("Method not implemented.");
+    return false;
   }
   isBox(): boolean {
-    throw new Error("Method not implemented.");
+    return false;
   }
   isFallingBox(): boolean {
-    throw new Error("Method not implemented.");
+    return false;
   }
   isKey1(): boolean {
-    throw new Error("Method not implemented.");
+    return false;
   }
   isLock1(): boolean {
-    throw new Error("Method not implemented.");
+    return false;
   }
   isKey2(): boolean {
-    throw new Error("Method not implemented.");
+    return false;
   }
   isLock2(): boolean {
-    throw new Error("Method not implemented.");
+    return false;
   }
 }
-class FallingStone implements Tile2 {}
-class Box implements Tile2 {}
-class FallingBox implements Tile2 {}
-class isKey1 implements Tile2 {}
-class isLock1 implements Tile2 {}
-class isKey2 implements Tile2 {}
-class isLock2 implements Tile2 {}
+class FallingStone implements Tile2 {
+  isAir(): boolean {
+    return false;
+  }
+  isFlux(): boolean {
+    return false;
+  }
+  isUnbreakable(): boolean {
+    return false;
+  }
+  isPlayer(): boolean {
+    return false;
+  }
+  isStone(): boolean {
+    return false;
+  }
+  isFallingStone(): boolean {
+    return true;
+  }
+  isBox(): boolean {
+    return false;
+  }
+  isFallingBox(): boolean {
+    return false;
+  }
+  isKey1(): boolean {
+    return false;
+  }
+  isLock1(): boolean {
+    return false;
+  }
+  isKey2(): boolean {
+    return false;
+  }
+  isLock2(): boolean {
+    return false;
+  }
+}
+class Box implements Tile2 {
+  isAir(): boolean {
+    return false;
+  }
+  isFlux(): boolean {
+    return false;
+  }
+  isUnbreakable(): boolean {
+    return false;
+  }
+  isPlayer(): boolean {
+    return false;
+  }
+  isStone(): boolean {
+    return false;
+  }
+  isFallingStone(): boolean {
+    return false;
+  }
+  isBox(): boolean {
+    return true;
+  }
+  isFallingBox(): boolean {
+    return false;
+  }
+  isKey1(): boolean {
+    return false;
+  }
+  isLock1(): boolean {
+    return false;
+  }
+  isKey2(): boolean {
+    return false;
+  }
+  isLock2(): boolean {
+    return false;
+  }
+}
+class FallingBox implements Tile2 {
+  isAir(): boolean {
+    return false;
+  }
+  isFlux(): boolean {
+    return false;
+  }
+  isUnbreakable(): boolean {
+    return false;
+  }
+  isPlayer(): boolean {
+    return false;
+  }
+  isStone(): boolean {
+    return false;
+  }
+  isFallingStone(): boolean {
+    return false;
+  }
+  isBox(): boolean {
+    return false;
+  }
+  isFallingBox(): boolean {
+    return true;
+  }
+  isKey1(): boolean {
+    return false;
+  }
+  isLock1(): boolean {
+    return false;
+  }
+  isKey2(): boolean {
+    return false;
+  }
+  isLock2(): boolean {
+    return false;
+  }
+}
+class isKey1 implements Tile2 {
+  isAir(): boolean {
+    return false;
+  }
+  isFlux(): boolean {
+    return false;
+  }
+  isUnbreakable(): boolean {
+    return false;
+  }
+  isPlayer(): boolean {
+    return false;
+  }
+  isStone(): boolean {
+    return false;
+  }
+  isFallingStone(): boolean {
+    return false;
+  }
+  isBox(): boolean {
+    return false;
+  }
+  isFallingBox(): boolean {
+    return false;
+  }
+  isKey1(): boolean {
+    return false;
+  }
+  isLock1(): boolean {
+    return false;
+  }
+  isKey2(): boolean {
+    return false;
+  }
+  isLock2(): boolean {
+    return false;
+  }
+}
+class isLock1 implements Tile2 {
+  isAir(): boolean {
+    return false;
+  }
+  isFlux(): boolean {
+    return false;
+  }
+  isUnbreakable(): boolean {
+    return false;
+  }
+  isPlayer(): boolean {
+    return false;
+  }
+  isStone(): boolean {
+    return false;
+  }
+  isFallingStone(): boolean {
+    return false;
+  }
+  isBox(): boolean {
+    return false;
+  }
+  isFallingBox(): boolean {
+    return false;
+  }
+  isKey1(): boolean {
+    return false;
+  }
+  isLock1(): boolean {
+    return true;
+  }
+  isKey2(): boolean {
+    return false;
+  }
+  isLock2(): boolean {
+    return false;
+  }
+}
+class isKey2 implements Tile2 {
+  isAir(): boolean {
+    return false;
+  }
+  isFlux(): boolean {
+    return false;
+  }
+  isUnbreakable(): boolean {
+    return false;
+  }
+  isPlayer(): boolean {
+    return false;
+  }
+  isStone(): boolean {
+    return false;
+  }
+  isFallingStone(): boolean {
+    return false;
+  }
+  isBox(): boolean {
+    return false;
+  }
+  isFallingBox(): boolean {
+    return false;
+  }
+  isKey1(): boolean {
+    return false;
+  }
+  isLock1(): boolean {
+    return false;
+  }
+  isKey2(): boolean {
+    return true;
+  }
+  isLock2(): boolean {
+    return false;
+  }
+}
+class isLock2 implements Tile2 {
+  isAir(): boolean {
+    return false;
+  }
+  isFlux(): boolean {
+    return false;
+  }
+  isUnbreakable(): boolean {
+    return false;
+  }
+  isPlayer(): boolean {
+    return false;
+  }
+  isStone(): boolean {
+    return false;
+  }
+  isFallingStone(): boolean {
+    return false;
+  }
+  isBox(): boolean {
+    return false;
+  }
+  isFallingBox(): boolean {
+    return false;
+  }
+  isKey1(): boolean {
+    return false;
+  }
+  isLock1(): boolean {
+    return false;
+  }
+  isKey2(): boolean {
+    return false;
+  }
+  isLock2(): boolean {
+    return true;
+  }
+}
 
 enum RawInput {
   UP, DOWN, LEFT, RIGHT
